@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Pulselab</title>
+</head>
+
+<body>
+    <nav class="navbar  navbar-expand-lg navbar-dark fixed-top py-3" id="main-nav">
+        <div class="container">
+            <div class="logo-nav">
+            <a class="navbar-brand js-scroll-trigger" href="https://pulselabjakarta.org/">
+                <img src="assets/img/logo-mobilev.png" alt="" class="logo ">
+            </a>
+            </div>
+         
+            <button class="navbar-toggler btn-nav-mobile navbar-toggler-end" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+
+                    <li class="nav-item mr-3 active">
+                        <a class="nav-link js-scroll-trigger" href="#section-main-event" onclick="smoothScroll(event, '#section-main-event')">About</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link js-scroll-trigger" href="#contact" onclick="smoothScroll(event, '#contact')" >Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+            <li data-target="#carousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/banner-mobile/banner-1.png" class="d-block w-100 banner" alt="banner1" id="banner1" style="">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/banner-mobile/banner-2.png" class="d-block w-100" alt="banner2" id="banner2" style="z-index: -9; position: absolute; object-fit: cover; ">
+                <img src="assets/img/banner-mobile/banner-7.png" class="d-block w-100" alt="banner7" id="banner7" style="z-index: 99; opacity: 0; animation: fadeIn 1s ease-out 2s forwards;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/banner-mobile/banner-3.png" class="d-block w-100" alt="banner3" id="banner3" style="z-index: -9; position: absolute; object-fit: cover;">
+                <img src="assets/img/banner-mobile/banner-8.png" class="d-block w-100" alt="banner8" id="banner8" style="z-index: 99; opacity: 0; animation: fadeIn 1s ease-out 2s forwards;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/banner-mobile/banner-4.png" class="d-block w-100" alt="banner4" id="banner4" style="z-index: -9; position: absolute; object-fit: cover;">
+                <img src="assets/img/banner-mobile/banner-9.png" class="d-block w-100" alt="banner9" id="banner9" style="z-index: 99; opacity: 0; animation: fadeIn 1s ease-out 2s forwards;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/banner-mobile/banner-5.png" class="d-block w-100" alt="banner5" id="banner5" style="z-index: -9; position: absolute; object-fit: cover;">
+                <img src="assets/img/banner-mobile/banner-10.png" class="d-block w-100" alt="banner10" id="banner10" style="z-index: 99; opacity: 0; animation: fadeIn 1s ease-out 2s forwards;">
+            </div>
+
+
+        
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carousel" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carousel" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+
+<div id="section-main-event"  class="smooth-scroll-target">
+    <section class="page-section" >
+     <div class="d-flex flex-wrap">
+        <div class="container justify-content-center align-items-center">
+            <div class="btn-group d-flex flex-wrap container-nav btn-group-toggle  w-100" data-toggle="buttons" >
+                <label class="btn btn-nav   event-option d-flex align-items-center justify-content-center active" style="border-radius: 2em !important;">
+                    <input type="radio" class="event-option" id="opt-about" data-target="tab-about" checked> ABOUT
+                </label>
+                
+                <label class="btn flex-fill rounded btn-nav event-option  d-flex align-items-center justify-content-center" style="border-radius: 2em !important;">
+                    <input type="radio" class="event-option" id="opt-exhibition" data-target="tab-exhibition">
+                    EXHIBITION
+                </label>
+                <label class="btn  flex-fill btn-nav event-option d-flex align-items-center justify-content-center " style="border-radius: 2em !important;">
+                    <input type="radio" class="event-option" id="opt-seminar" data-target="tab-seminar"> SEMINAR
+                </label>
+                <label class="btn flex-fill btn-nav event-option d-flex align-items-center justify-content-center" style="border-radius: 2em !important;">
+                    <input type="radio" class="event-option" id="opt-workshop" data-target="tab-workshop"> WORKSHOP
+                </label>
+                <label class="btn flex-fill btn-nav event-option d-flex align-items-center justify-content-center" style="border-radius: 2em !important;">
+                    <input type="radio" class="event-option" id="opt-gala" data-target="tab-gala"> GALA DINNER
+                </label>
+            </div>
+        </div>
+        
+
+        <div class="container mt-5">
+            <div class="row event-tab" id="tab-about">
+                <div class="col-lg-12">
+                    <h1 class="font-weight-bold">ABOUT</h1>
+                    <div class="card  text-dark mt-5">
+                        <div  style="outline: none !important;">
+                            <p class="text-justify" style="font-weight: 400;">Established in 2012, Pulse Lab Jakarta is a joint data innovation facility of the United Nations (Global     Pulse) and the Government of Indonesia (via the Ministry of National Development Planning, Bappenas). Functioning as an analytic partnerships accelerator, the Lab applies mixed-methods approaches to the problem, solution, and identity spaces. It is focused on catalyzing connections across the private sector, government, and civil society to support policies and action for effective development and humanitarian practice. 
+
+                                <br><br>This year marks a decade of Pulse Lab Jakarta’s operations and its transition to United Nations Global Pulse Asia Pacific. To this end, Pulse Lab Jakarta intends to hold an event celebrating the 10 years of achievements and impacts and announcing the launch of United Nations Global Pulse Asia Pacific to create wider impacts across the region. 
+                                
+                                <br><br> A Decade of Pulse Lab Jakarta and Launch of UN Global Pulse Asia Pacific event will take place on 22-23 June 2023. This event will bring together a diverse group of stakeholders, including representatives from government agencies, Asia-Pacific country representatives, UN Agencies, donor organizations, civil society organizations, academics, development partners, PLJ staff and alumni, youth and the general public.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row event-tab" id="tab-exhibition">
+                <div class="col-lg-12">
+                    <h1 class="font-weight-bold">EXHIBITION</h1>
+                    <div class="card  text-dark mt-5 fadeIn">
+                        <div class="card-body p-0" style="border:2px solid #1b3d7a; animation: fadeIn 1s ease-out 2s forwards;">
+                            <p class="text-justify" style="font-weight: 800;" >Pulse Lab Jakarta : Celebrating A Decade of Impact, Empowering The Futures
+                                  <table>
+                                    <tr>
+                                      <th>Date</th>
+                                      <td>: June 22nd & 23rd, 2023</td>
+                                    </tr>
+                                    <tr>
+                                      <th class="d-flex align-items-start">Venue</th>
+                                      <td >: West Java Ballroom<br>&nbsp;&nbsp;The Westin Hotel Jakarta</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Desc</th>
+                                      <td>: Celebrating A Decade of Impact, Empowering The Futures and Launch of the United Nations Global Pulse Asia-Pacific</td>
+                                    </tr>
+                                  </table>
+                                
+
+                                <br><br><b>Our Repository</b>: <br/>Coming Soon
+                                <span style="font-weight: 400;"><br> Our project repository, <b>"Centralize"</b> shows a complete and detailed overview of the projects that Pulse Lab Jakarta has conducted over the past decade. You can learn more about our themes, the SDGs we cover, and view our data journey across the years!</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row event-tab" id="tab-seminar">
+                <div class="col-lg-12">
+                    <h1 class="font-weight-bold">SEMINAR</h1>
+                    <h3 class="font-weight-bold mt-5"style="font-weight: 700;">Seminar 1: Inclusive Data Innovation for Equitable Digital Futures</h3>
+                    <div class="card rounded text-dark mt-4">
+                        <div class="card-body p-0">
+                            <p class="text-justify mb-0"style="font-weight: 400;">In this rapidly evolving digital era, data has become a driving force behind decision-making, technological advancements, and societal progress. However, without a deliberate focus on inclusivity, these developments can inadvertently perpetuate existing disparities and exclude marginalized communities.
+
+                                <br><br>In this hybrid seminar, we are going to dive into the concept of inclusive data innovation, emphasizing the importance of diverse representation and equitable access to data-driven opportunities. We will examine real-world examples of how inclusive approaches to data collection, analysis, and application have resulted in positive social impact and empowered underrepresented groups.
+                            </p>
+                        </div>
+                        <div class=" p-0 mt-3 card-body">
+                            <div class="row justify-content-top align-items-center">
+                                <div class="col-lg-6" >
+                                    <!-- <b>Location:</b> West Java Ballroom, The Westin Jakarta
+                                    <br><b>Time:</b> 11:30* - 16:00 -->
+
+                                    <table>
+                                        <tr>
+                                            <th style="font-weight: 700;" class="d-flex align-items-start">Venue</th>
+                                            <td class="mt-5 ">: West Java Ballroom<br>&nbsp;&nbsp;The Westin Hotel Jakarta</td>
+                                          </tr>
+                                        <tr>
+                                          <th style="font-weight: 700;">Time</th>
+                                          <td>: 11:30 WIB - 16:00 WIB</td>
+                                        </tr>
+                                        <tr>
+                                            <th style="font-weight: 700;">Registration & Lunch</th>
+                                            <td>: 11:30 WIB - 13:00 WIB</td>
+                                          </tr>
+                                      </table>
+
+                                </div>
+
+
+
+
+                            <div class="d-flex flex-row mt-4 justify-content-center w-100">
+                                <div class="mr-2">
+                                    <a class="btn btn-block p-2 btn-primary " href="https://forms.gle/EEcKUDsn6GA781rW6" target="_blank">
+                                        <span class="font-weight-bold text-sm-white">Register <br>(In Person Registration )</span>
+                                    </a>
+                                </div>
+                                <div class="ml-2">
+                                    <a class="btn btn-block btn-primary p-2" href="https://forms.gle/oztGcWjhmoDrqgo37" target="_blank">
+                                        <span class="font-weight-bold text-sm-white ">Register <br>(Virtual Registration)</span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5 w-100 container">
+
+                        <div class="d-flex row flex-wrap w-100 justify-content-between" >
+                            <div class="d-flex col-md-4 mr-auto">
+                                <p class=" font-weight-bold w-100 d-flex text-center">Opening Remarks</p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Agung Indrajit, Head of Center for Data and Information Development Planning</span><br>Ministry of National Development Planning, Republic of Indonesia</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-wrap row w-100 justify-content-between" >
+                            <div class="d-flex col-md-4 mr-auto">
+                                <p class=" font-weight-bold w-100 d-flex text-center">Keynote Speaker</p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Taufik Hanafi, Executive Secretary</span><br> Ministry of Development Planning Agency of the Republic of Indonesia (Bappenas RI)</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-wrap row w-100 justify-content-between" >
+                            <div class="d-flex col-md-4 mr-auto">
+                                <p class=" font-weight-bold w-100 d-flex text-center">Moderator</p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Andini Kamayana, Communication Manager</span><br> UN Global Pulse - Pulse Lab Jakarta</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-wrap row w-100 justify-content-between" >
+                            <div class="d-flex col-md-4 mr-auto">
+                                <p class=" font-weight-bold w-100 d-flex text-center">Panelists</p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Malikit, Act Deputy for Population and Manpower</span><br>  Ministry of Development Planning Agency of the Republic of Indonesia (Bappenas RI) </p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Jessica Gardner, Technical Lead</span><br>  Violence against Women Data and Research, United Nations Population Fund (UNFPA)</p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Srinivas Tata, Director of Social Development Division</span><br>  United Nations Economic and Social Commission (UNESCAP) </p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Tahu Kukutai, Professor at University of Waikato</span><br>  New Zealand</p>
+                            </div>
+                        </div>
+                     </div>
+                        <div class="col-md-12 text-center mt-5">
+                            <p style="font-weight: 700;">*Please note that the identified speakers may be subject to change as we arrange final confirmations.</p>
+                        </div>
+                    </div>
+                    
+                    <hr class="mt-5">
+
+                    <h3 class="font-weight-bold mt-5">Seminar 2: Catalyzing Innovation in Asia Pacific through ‘Quintet of Change’ Capabilities</h3>
+                    <div class="card border-0 rounded text-dark mt-4">
+                        <div class="card-body p-0">
+                            <p class="text-justify mb-0">Innovation is a driving force behind economic growth and societal advancement. Our hybrid seminar on <b>"Catalyzing Innovation in Asia Pacific through Quintet of Capabilities"</b> is a thought-provoking session that explores the dynamic landscape of innovation in the region. This seminar underscores the key capabilities to drive innovation, including data, digital, strategic foresight, behavioral science. By harnessing the power of quintet capabilities, innovation across the region can be elevated and its immense potential can be unlocked. 
+
+                                <br><br>By bringing together experts, thought leaders, and innovators, this seminar provides a platform to examine the five key capabilities that serve as the foundation for innovation in Asia-Pacific.                                
+                            </p>
+                        </div>
+                        <div class=" p-0 mt-3 card-body">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-lg-6">
+   
+                                    <table>
+                                        <tr>
+                                            <th style="font-weight: 700;" class="d-flex align-items-start">Venue</th>
+                                            <td class="mt-5 ">: West Java Ballroom,<br>&nbsp;&nbsp;The Westin Jakarta </td>
+                                          </tr>
+                                        <tr>
+                                          <th style="font-weight: 700;">Registration</th>
+                                          <td>: 08:00 WIB - 08:30 WIB</td>
+                                        </tr>
+                                      </table>
+
+                                </div>
+
+                                
+                            <div class="d-flex flex-row mt-4 justify-content-center w-100">
+                                <div class="mr-2">
+                                    <a class="btn btn-block p-2 btn-primary " href="https://forms.gle/4YVSrtYVEeoDvcEHA" target="_blank">
+                                        <span class="font-weight-bold text-sm-white">Register <br>(In Person Registration )</span>
+                                    </a>
+                                </div>
+                                <div class="ml-2">
+                                    <a class="btn btn-block btn-primary p-2" href="https://forms.gle/aaQz2xHEXHvtGELdA" target="_blank">
+                                        <span class="font-weight-bold text-sm-white ">Register <br>(Virtual Registration)</span>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5 w-100 container">
+
+                        <div class="d-flex row flex-wrap w-100 justify-content-between" >
+                            <div class="d-flex col-md-4 mr-auto">
+                                <p class=" font-weight-bold w-100 d-flex text-center">Opening Remarks</p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Faizal Thamrin, Data Innovation and Policy Lead</span><br>United Nations Global Pulse - Pulse Lab Jakarta</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-wrap row w-100 justify-content-between" >
+                            <div class="d-flex col-md-4 mr-auto">
+                                <p class=" font-weight-bold w-100 d-flex text-center">Keynote Speaker</p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Kersten Jauer, Deputy Director</span><br> Strategic Planning and Monitoring, Office of the UN Secretary-General</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-wrap row w-100 justify-content-between" >
+                            <div class="d-flex col-md-4 mr-auto">
+                                <p class=" font-weight-bold w-100 d-flex text-center">Moderator</p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Desi Vicianna, Government Partnership Coordinator</span><br> UN Global Pulse - Pulse Lab Jakarta</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-wrap row w-100 justify-content-between" >
+                            <div class="d-flex col-md-4 mr-auto">
+                                <p class=" font-weight-bold w-100 d-flex text-center">Panelists</p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Professor Suhail Inayatullah</span><br>  UNESCO Chair in Futures Studies at Sejahtera </p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Jessica Gardner, Technical Lead</span><br>  Violence against Women Data and Research, United Nations Population Fund (UNFPA)</p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Caitlin Court, Senior Advisor</span><br>  the Behavioral Insights Team, Australia</p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Jong Gun Lee, Chief Visionary Officer</span><br> Enterprise Blockchain</p>
+                            </div>
+                            <div class="d-flex col-md-8 ml-auto">
+                                <p > <span class="font-weight-bold ml-auto"> Dr. Karaitiana Taiuru</span> <br>Māori AI/Data and Emerging Technologies Ethicist</p>
+                            </div>
+                        </div>
+                     </div>
+                        <div class="col-md-12 justify-content-center mt-5">
+                            <p style="font-weight: 700;">*Please note that the identified speakers may be subject to change as we arrange final confirmations.</p>
+                     </div>                
+            </div>
+            <div class="row event-tab " id="tab-workshop">
+                <div class="col-lg-12">
+                    <h1 class="font-weight-bold">WORKSHOP</h1>
+                    <h3 class="font-weight-bold mt-5">Service Design 101 Workshop</h3>
+                    <div class="card border-0 rounded text-dark mt-4">
+                        <div class="card-body p-0">
+                            <p class="text-justify mb-0">The <b>Service Design 101 Workshop</b> is designed to equip participants with the knowledge, tools, and practical experience they need to be service design practitioners and help them to create more user-centered, effective, and innovative public services that meet the evolving needs of citizens. 
+
+                                <br><br> This workshop will be conducted in collaboration with the Digital Transformation Office of the Ministry of Health of the Republic of Indonesia and will explore the <b>user journey of vaccine reminders and the registration process</b>.
+                                
+                                <br><br> It will be open to a wide range of development practitioners from various backgrounds who are keen to learn about service design, including service designers, design researchers, qualitative researchers, data analysts, product researchers, social scientists, and policymakers, among others. 
+                            </p>
+                        </div>
+                        <div class=" p-0 mt-5">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-lg-8">
+                                    <table>
+                                        <tr>
+                                            <th style="font-weight: 700;" class="d-flex align-items-start">Location</th>
+                                            <td class="mt-5 ">: Denpasar Room<br>&nbsp;&nbsp;The Westin Jakarta (in-person only) </td>
+                                          </tr>
+                                        <tr>
+                                          <th style="font-weight: 700;">Time</th>
+                                          <td>: 13:00 WIB</td>
+                                        </tr>
+                                      </table>
+
+
+                                    <br><br><b>**Spaces for our workshop are limited. Interested participants are encouraged to register as soon as possible to ensure they get to join our workshop!**</b>
+                                </div>
+                                <div class="col-lg-2 mt-sm-4">
+                                    <a class="btn btn-block btn-primary  py-3" href="https://forms.gle/UzEMmoP7hoK6ivwo8" target="_blank">
+                                        <span class="font-weight-bold text-white">Register</span> 
+                                        <i class="ml-2 fas fa-long-arrow-alt-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row event-tab" id="tab-gala">
+                <div class="col-lg-12">
+                    <h1 class="font-weight-bold">GALA DINNER</h1>
+                    <div class="card border-0 rounded text-dark mt-3">
+                        <div class="card-body p-0">
+                            <hr>
+                            <div class="row justify-content-between">
+                                <div class="col-lg-12">
+                                    <h5>Gala Dinner: Launching of United Nations Global Pulse Asia Pacific</h5><br/>
+                                    <p class="text-left text-dark mb-0">
+                                        We are inviting stakeholders & partners to our Gala Dinner to launch the United Nations Global Pulse Asia Pacific, which builds upon the work that Pulse Lab Jakarta has accomplished over the past decade. The Gala Dinner will provide opportunities for participants to share their thoughts and aspirations for the United Nations Global Pulse Asia Pacific as we scale up the work that Pulse Lab Jakarta to broaden our impact in the Asia Pacific region. In addition to the program, guests will enjoy a musical performance, networking opportunities, and the chance to view our interactive exhibition showcasing PLJ's achievements and impact.
+                                    </p>
+                                    <br/>
+
+                                        <table class="mb-3">
+                                            <tr>
+                                              <th  style="font-weight: 700;">Date</th>
+                                              <td>: Friday, 23 June 2023</td>
+                                            </tr>
+                                            <tr>
+                                              <th  style="font-weight: 700;">Time</th>
+                                              <td class="place">: 18.00 WIB - 21.30 WIB</td>
+                                            </tr>
+                                            <tr>
+                                              <th  style="font-weight: 700;">Venue</th>
+                                              <td>: The Westin Hotel Jakarta</td>
+                                            </tr>
+                                          </table>
+
+                                    <span class="mt-5" style="font-weight: 800;">* The Gala Dinner  is by close invitation only *</span>
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <section class="page-section" id="section-venue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-xl-6">
+                    <h1 class="font-weight-bold" >VENUE</h1>
+                    <h3 class="mt-5">The Westin Jakarta</h3>
+                    <h5  style="font-weight: 200;" class="text-left">Jl. H. R. Rasuna Said No.Kav.C-22A, RT.2/RW.5, Karet Kuningan, Kecamatan Setiabudi, Kota Jakarta
+                        Selatan, Daerah Khusus Ibukota Jakarta 12940</h5>
+                </div>
+                <div class="col-lg-8 col-xl-6 mt-sm-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3028141275786!2d106.83128041151927!3d-6.223744760930487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3f1144aa5e5%3A0x55b5886634b5a317!2sThe%20Westin%20Jakarta!5e0!3m2!1sid!2sid!4v1685709724200!5m2!1sid!2sid"
+                        width="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        id="map-venue"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5 pt-5 py-4" id="contact">
+        <div class="container">
+            <hr style="height:1px;border:none;color:#333;background-color:#333;">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-sm-12 col-lg-2 d-flex justify-content-center offset-lg-0 mb-sm-2 pl-sm-0 pr-sm-0 pr-lg-2 pr-xl-0 text-sm-center">
+                            <i class="far fa-envelope fa-3x"></i>
+                        </div>
+                        <div class="col-sm-12 col-lg-10 text-center offset-lg-0 pl-sm-0 pr-sm-0 pl-lg-2 pl-xl-0 text-sm-center text-lg-left">
+                            <p class="font-weight-bold mb-0 ">CONTACT</p>
+                            <p>
+                                Email: <a href="mailto:events.plj@un.or.id" class="text-decoration-none text-primary">events.plj@un.or.id</a>
+                                &nbsp &nbsp Phone: <b>021-3983-8473</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-sm-12 col-lg-auto mt-sm-5 mt-lg-0 mr-lg-3 text-sm-center">
+                            <h4 class="font-weight-bold mb-0 text-center">Follow Us</h4>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                        <div class="col-sm-2 col-lg-2 mt-sm-4 mb-sm-5 mt-lg-0 mb-lg-0 text-sm-center d-flex">
+                            <a target="_blank" href="https://web.facebook.com/PulseLabJakarta"><i class="fab fa-facebook fa-2x"></i></a>
+                        </div>
+                        <div class="col-sm-2 col-lg-2 mt-sm-4 mb-sm-5 mt-lg-0 mb-lg-0 text-sm-center d-flex">
+                            <a target="_blank" href="https://twitter.com/PulseLabJakarta"><i
+                                    class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                        <div class="col-sm-2 col-lg-2 mt-sm-4 mb-sm-5 mt-lg-0 mb-lg-0 text-sm-center d-flex">
+                            <a target="_blank" href="https://www.linkedin.com/company/un-pulse-lab-jakarta/"><i
+                                    class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                        <div class="col-sm-2 col-lg-2 mt-sm-4 mb-sm-5 mt-lg-0 mb-lg-0 text-sm-center">
+                            <a target="_blank" href="https://www.instagram.com/pulselabjakarta/"><i
+                                    class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-landing" tabindex="-1" role="dialog" aria-labelledby="modal-landing-title"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-landing-title">Welcome</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/PUSLAB-MAIN-KV-LANDSCAPE.png" alt="welcome" class="img-fluid" id="img-welcome">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-tosca text-dark">Repository</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      function smoothScroll(event, targetId) {
+         event.preventDefault();
+
+         var allSections = document.querySelectorAll("section");
+         allSections.forEach(function(section) {
+         section.classList.remove("section-margin-top");
+       });
+
+         var targetSection = document.querySelector(targetId);
+         targetSection.classList.add("section-margin-top");
+         targetSection.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        }
+
+
+        function fadeInColumns() {
+         var columns = document.querySelectorAll('.delay-card');
+         var delay = 1000; 
+
+         columns.forEach(function (column, index) {
+         setTimeout(function () {
+         column.classList.add('show');
+          }, delay * (index));
+         });
+        }
+
+        fadeInColumns();
+    </script>
+
+
+</body>
+
+</html>
